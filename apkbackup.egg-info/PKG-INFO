@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: apkbackup
+Version: 0.1
+Summary: ADB APK backup utility
+Home-page: https://github.com/webmaster-exit-1/apkbackup
+Author: MrGFY
+Author-email: mrgofuckyourself@pm.me
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)

@@ -1,0 +1,8 @@
+README.md
+setup.py
+apkbackup/__init__.py
+apkbackup/backup.py
+apkbackup.egg-info/PKG-INFO
+apkbackup.egg-info/SOURCES.txt
+apkbackup.egg-info/dependency_links.txt
+apkbackup.egg-info/top_level.txt

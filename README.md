@@ -1,8 +1,11 @@
-    \     _ \  |  / __ )             |                
-   _ \   |   | ' /  __ \   _` |  __| |  / |   | __ \  
-  ___ \  ___/  . \  |   | (   | (      <  |   | |   | 
-_/    _\_|    _|\_\____/ \__,_|\___|_|\_\\__,_| .__/  
-                                               _|     
+>
+        \     _ \  |  / __ )             |                
+       _ \   |   | ' /  __ \   _` |  __| |  / |   | __ \  
+      ___ \  ___/  . \  |   | (   | (      <  |   | |   | 
+    _/    _\_|    _|\_\____/ \__,_|\___|_|\_\\__,_| .__/  
+                                                    _|     
+
+
 # APKBackup
 
 A simple python module  to find, compress, and create an archive or backup of all the apk's on your phone via adb Android DeBug Bridge.
@@ -17,9 +20,29 @@ pip install apkbackup
 
 #### Here's how to get started with APKBackup: 
 
+Assuming your phone is connected to your pc or via adb wifi
+
+```bash
+adb usb
+```
+
+or
+
+```bash
+adb connect 192.168.0.999:5555
+```
+
+From within the python IDE
+
 ```py
 from apkbackup import backup
 backup.do_your_thing()
+```
+
+or as a command
+
+```bash
+apkbackup
 ```
 
 ### Contributing

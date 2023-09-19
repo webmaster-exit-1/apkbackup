@@ -6,3 +6,4 @@ apkbackup.egg-info/PKG-INFO
 apkbackup.egg-info/SOURCES.txt
 apkbackup.egg-info/dependency_links.txt
 apkbackup.egg-info/top_level.txt
+tests/test_apkbackup.py

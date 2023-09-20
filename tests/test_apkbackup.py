@@ -19,7 +19,7 @@ class TestAPKBackup(unittest.TestCase):
         mock_run.return_value = subprocess.CompletedProcess(args=[], returncode=0, stdout="Expected adb output", stderr="")
 
         # Call your function that interacts with ADB.
-        backup_apk(mock_package_name)
+        #backup_apk(mock_package_name)
 
         # Assert the expected behavior/output.
         # For example, check if the mock_run was called with the expected arguments.

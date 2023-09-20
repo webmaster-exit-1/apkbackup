@@ -20,11 +20,11 @@ def get_installed_packages():
 packages = get_installed_packages()
 print(packages)
 
-os.environ.get('TEST_ENV')
+
 # Adjust the sys.path to include the root directory of your project.
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from apkbackup import YourMainModuleFunction  # Replace this with your actual import
+from apkbackup import get_installed_packages, backup_apk
 
 class TestAPKBackup(unittest.TestCase):
 
@@ -33,7 +33,7 @@ class TestAPKBackup(unittest.TestCase):
         mock_run.return_value = "Expected adb output"
 
         # Call your function that interacts with ADB.
-        result = YourMainModuleFunction()
+        result = backup_apk(foobar.apk)
 
         # Assert the expected behavior/output.
         self.assertEqual(result, "Expected output based on mock")

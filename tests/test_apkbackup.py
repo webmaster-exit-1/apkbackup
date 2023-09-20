@@ -20,7 +20,7 @@ def get_installed_packages():
 packages = get_installed_packages()
 print(packages)
 
-if not os.environ.get('TEST_ENV'):
+os.environ.get('TEST_ENV')
 # Adjust the sys.path to include the root directory of your project.
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 

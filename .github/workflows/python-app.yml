@@ -29,6 +29,10 @@ jobs:
         pip install flake8 pytest
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
         if [ -f requirements_test.txt ]; then pip install -r requirements_test.txt; fi
+    - name: Install dependencies for M2Crypto
+      run: |
+        sudo apt-get install -y python3-dev libssl-dev swig
+        pip install M2Crypto
     - name: Lint with flake8
       run: |
         # stop the build if there are Python syntax errors or undefined names

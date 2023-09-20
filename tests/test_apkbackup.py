@@ -4,6 +4,22 @@ import unittest
 from unittest.mock import patch
 import sys
 import os
+import subprocess
+
+
+def get_installed_packages():
+    try:
+        result = subprocess.check_output(['adb', 'shell', 'pm', 'list', 'packages'], text=True)
+        packages = [line.split(":")[1].strip() for line in result.splitlines()]
+        return packages
+    except subprocess.CalledProcessError as e:
+        print(f"Error executing adb command: {e}")
+        return []
+
+# Example usage
+packages = get_installed_packages()
+print(packages)
+
 
 if not os.environ.get('TEST_ENV'):
     import module_related_to_M2Crypto

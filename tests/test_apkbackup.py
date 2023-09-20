@@ -5,6 +5,9 @@ from unittest.mock import patch
 import sys
 import os
 
+if not os.environ.get('TEST_ENV'):
+    import module_related_to_M2Crypto
+
 # Adjust the sys.path to include the root directory of your project.
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 

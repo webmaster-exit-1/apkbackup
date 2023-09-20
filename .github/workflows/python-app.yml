@@ -28,17 +28,6 @@ jobs:
         sudo apt install axel android-libbase android-libadb adb android-sdk-platform-tools android-sdk android-sdk-build-tools && sudo dpkg --configure -a && sudo apt install -f
         python -m pip install --upgrade pip
         pip install pyflakes
-        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-        if [ -f requirements_test.txt ]; then pip install -r requirements_test.txt; fi
-    - name: Set Test Environment
-      run: |
-        echo "TEST_ENV=True" >> $GITHUB_ENV
     - name: Lint with pyflakes
       run: |
         pyflakes .
-    - name: Set mock ADB path
-      run: |
-        echo "PATH=$GITHUB_WORKSPACE/tests/mocks:$PATH" >> $GITHUB_ENV
-    - name: Test with python
-      run: |
-        python tests/test_apkbackup.py

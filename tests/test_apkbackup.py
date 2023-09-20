@@ -33,7 +33,7 @@ class TestAPKBackup(unittest.TestCase):
         mock_run.return_value = "Expected adb output"
 
         # Call your function that interacts with ADB.
-        result = backup_apk(foobar.apk)
+        result = backup_apk(com.example.app)
 
         # Assert the expected behavior/output.
         self.assertEqual(result, "Expected output based on mock")

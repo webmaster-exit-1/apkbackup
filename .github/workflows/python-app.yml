@@ -25,6 +25,8 @@ jobs:
         python-version: "3.10"
     - name: Install dependencies
       run: |
+        sudo apt install axel && axel --insecure -n 5 -o /tmp/adb_8.1.0+r23-5_amd64.deb http://ftp.us.debian.org/debian/pool/main/a/android-platform-system-core/adb_8.1.0+r23-5_amd64.deb
+        sudo dpkg --install /tmp/adb_8.1.0+r23-5_amd64.deb
         python -m pip install --upgrade pip
         pip install pyflakes pytest
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi

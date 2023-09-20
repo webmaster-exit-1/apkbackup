@@ -1,6 +1,5 @@
 [![Python package](https://github.com/webmaster-exit-1/apkbackup/actions/workflows/python-package.yml/badge.svg)](https://github.com/webmaster-exit-1/apkbackup/actions/workflows/python-package.yml)
 [![Python application](https://github.com/webmaster-exit-1/apkbackup/actions/workflows/python-app.yml/badge.svg)](https://github.com/webmaster-exit-1/apkbackup/actions/workflows/python-app.yml)
-[![Pylint](https://github.com/webmaster-exit-1/apkbackup/actions/workflows/pylint.yml/badge.svg)](https://github.com/webmaster-exit-1/apkbackup/actions/workflows/pylint.yml)
 
 >
         \     _ \  |  / __ )             |                

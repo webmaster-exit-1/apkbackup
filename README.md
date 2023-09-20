@@ -1,3 +1,5 @@
+[![Python application](https://github.com/webmaster-exit-1/apkbackup/actions/workflows/python-app.yml/badge.svg)](https://github.com/webmaster-exit-1/apkbackup/actions/workflows/python-app.yml)
+
 >
         \     _ \  |  / __ )             |                
        _ \   |   | ' /  __ \   _` |  __| |  / |   | __ \  

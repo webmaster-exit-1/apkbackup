@@ -9,7 +9,7 @@ import subprocess  # Ensure this import is present
 from apkbackup import backup_apk  # Only import what you're using
 
 # Adjust the sys.path to include the root directory of your project.
-sys.path.append(os.path.dirname(os.path.abspath(__file__))))
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
 class TestAPKBackup(unittest.TestCase):
 
